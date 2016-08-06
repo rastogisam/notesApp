@@ -1,6 +1,8 @@
 "use strict";
 
 function listController($scope, noteService) {
-     var vm = this;
-     vm.notes = noteService.getNotes();
+     this.notes = noteService.getNotes();
 }
+
+
+angular.module("notesApp").controller("listController", listController);
